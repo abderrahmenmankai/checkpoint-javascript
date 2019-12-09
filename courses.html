@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My First Page Html</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="res/headlogo.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+
+<body>
+    <!---------------------------------------------------------------Header Container------------------------------------------------->
+    <div class="headerContainer">
+        <header>
+            <a href="index.html"><img src="res/logo-gmc.png" style="height: 40px;" alt="logo" class="logo"></a>
+            <nav class="navBar" style=" display: flex;flex-direction: row;justify-content: center">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="content" align="center">
+        <div id="cover" class="cover-courses">
+        </div>
+        <h1>feedback</h1>
+            <button onclick="boldtext()" id="boldBtn" style="width: 25px">B</button>
+            <button onclick="italictext()" id="italicBtn" style="width: 25px">I</button>
+            <button id="underlineBtn" onclick="underlineText()" style="padding: 0px 3px">Underline</button>
+            <select id="dropSize" onchange="changeSizeText()">
+                <option value="20">20px</option>
+                <option value="24">24px</option>
+                <option value="26">26px</option>
+            </select>
+            <select id="dropFamily" onchange="changeFont (this);">
+                <option value="Times New Roman" selected ="selected">Times New Roman</option>
+                <option value="Arial">Arial</option>
+                <option value="Calibri">Calibri</option>
+            </select>
+            <br>
+            <textarea id="txt"  name="message" style="width:400px; height:100px;"></textarea>
+
+    </div>
+
+</body>
+    <script src="js/main.js"></script>
+</html>
